@@ -14,7 +14,10 @@ namespace think;
 
 // 加载基础文件
 require __DIR__ . '/../thinkphp/base.php';
-
+define('IMG_UPLOADS',__DIR__ .'/../public/static/uploads/');
+define('UEDITOR', __DIR__ . '/../../ueditor');
+define('HTTP_UEDITOR','/ueditor');
+define('DEL_UEDITOR',__DIR__ . '/../.././');
 // 支持事先使用静态方法设置Request对象和Config对象
 
 // 执行应用并响应
