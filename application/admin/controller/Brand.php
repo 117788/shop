@@ -38,7 +38,6 @@ class Brand extends BaseController
                 $oldBrands = db('brand')->field('brand_img')->find($id);
                 $oldBrandsImg = IMG_UPLOADS.$oldBrands['brand_img'];
                 if(file_exists($oldBrandsImg)){
-                    
                     @unlink($oldBrandsImg);
                 }
                 $data['brand_img'] = $this->upload('brand_img', 'brand');
